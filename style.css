@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -124,7 +129,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 30px 5%;
     text-align: right;
 }
 

@@ -8,7 +8,7 @@
 body{
     background-color: #1a1a1a;
     color: #e0e0e0;
-    font-family: 'Roboton', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2 {
@@ -43,7 +43,7 @@ p{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.content-section{
+.content-section {
     padding: 60px 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -182,6 +182,170 @@ nav a:hover{
     transform: translateY(0); 
 }
 
+#alert-button {
+    background-color: #a00;
+    color: #fff;
+    border: 1px solid #f00;
+    padding: 8px 15px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    margin-left: 25px;
+    transition: background-color 0.3s;
+}
+
+#alert-button:hover {
+background-color: #d00;
+}
+
+body.alert-mode {
+    background-color: #300;
+    transition: background-color 1s ease;
+}
+
+body.alert-mode .hero-section{
+    background-image: linear-gradient(rgba(100, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://mcdn.wallpapersafari.com/medium/67/14/IyKflP.png");
+}
+
+.movie-container{
+    overflow: hidden;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    min-height: 450px;
+    display: block; 
+    max-width: 400px; 
+    margin: 40px auto 0 auto;
+}
+
+.movie-container img{
+    object-fit: cover;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.movie-name{
+    padding: 0 0 0 19px;
+}
+
+.movie-name h2{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 3px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0;
+}
+
+.movie-name h4{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 0;
+}
+
+.movie-details{
+    text-align: left;
+    padding: 10px;
+}
+
+.movie-details h3{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #00aaff;
+    padding: 8px;
+}
+
+.movie-details p{
+    margin-top: 0;
+    font-size: 15px;
+    color: #ccc;
+}
+
+.movie-details h4{
+    text-align: left;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.movie-details .cast{
+    text-align: left;
+    font-style: italic;
+    color: #aaa;
+}
+
+.trailer-button{
+    display: inline-block;
+    background-color: #00aaff;
+    color: #111;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.trailer-button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team-member {
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover{
+    transform: translate(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.team-member img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00aaff;
+    margin-bottom: 15px;
+}
+
+.team-member h3{ 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+}
+
+.team-member h4{
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.team-member p{
+    font-size: 0.9rem;
+    color: #ccc;
+}
 
 @media (max-width: 768px) {
     h1{
@@ -210,4 +374,20 @@ nav a:hover{
     .quote blockquote{
         font-size: 1.4rem;
     }
-};
+.movie-container{
+    background-size: cover; 
+    background-position: center top; 
+    padding: 30px; 
+    padding-top: 200px; 
+    min-height: auto; 
+    text-align: center; 
+}
+    .movie-details {
+        margin-top: 20px;
+    }
+
+    .team-grid {
+        grid-template-columns:  1fr;
+    }
+}
+
